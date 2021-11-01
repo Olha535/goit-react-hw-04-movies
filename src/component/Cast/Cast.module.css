@@ -1,0 +1,14 @@
+.img {
+  display: block;
+  width: 150px;
+  height: 230px;
+
+  object-fit: cover;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}

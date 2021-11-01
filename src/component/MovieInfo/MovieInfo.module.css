@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px #2196f3;
+  margin-top: 50px;
+}
+
+.img {
+  width: 300px;
+  display: block;
+  /* height: auto;
+  object-fit: cover; */
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.titleMovie {
+  text-align: center;
+  margin-left: 50px;
+}
+
+.wrapperTitle {
+  flex-direction: column;
+  margin-left: 50px;
+}
