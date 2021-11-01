@@ -6,10 +6,6 @@ import Container from '../Container';
 import AppBar from '../AppBar';
 
 import Spinner from '../Loader';
-// import NotFoundView from '../../views/NotFoundView';
-// import HomePage from '../../views/HomePage';
-// import MoviesDetailsPage from '../../views/MoviesDetailsPage';
-// import MoviesPage from '../../views/MoviesPage';
 
 // const NotFoundView = lazy(() =>
 //   import('../../views/NotFoundView.js' /*webpackChunkName: "not-found-view" */),

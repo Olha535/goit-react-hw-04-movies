@@ -40,11 +40,11 @@ export default function MovieInfo({
 }
 
 MovieInfo.propTypes = {
-  title: PropTypes.string,
-  poster: PropTypes.string,
-  overview: PropTypes.string,
-  releaseDate: PropTypes.string,
-  popularity: PropTypes.number,
-  vote: PropTypes.number,
-  genres: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  poster: PropTypes.string.isRequired,
+  overview: PropTypes.string.isRequired,
+  releaseDate: PropTypes.string.isRequired,
+  popularity: PropTypes.number.isRequired,
+  vote: PropTypes.number.isRequired,
+  genres: PropTypes.string.isRequired,
 };
