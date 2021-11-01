@@ -26,6 +26,8 @@ export default function Cast() {
           behavior: 'smooth',
         });
       }
+      const cast = await fetchCredits(movieId);
+      setCredits(cast);
     }
     getCast();
   }, [movieId]);

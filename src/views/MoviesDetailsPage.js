@@ -7,6 +7,7 @@ import {
   useLocation,
   useHistory,
 } from 'react-router-dom';
+import { useRef } from 'react';
 import { toast } from 'react-toastify';
 import MovieInfo from '../component/MovieInfo';
 import { fetchDetails } from '../services/api-service';
@@ -28,6 +29,8 @@ export default function MoviesDetailsPage() {
   const history = useHistory();
   const { url, path } = useRouteMatch();
 
+  const currentState = useRef(location.state?.from).current;
+
   const [movie, setMovie] = useState(null);
   const [loader, setLoader] = useState(false);
 
@@ -47,7 +50,7 @@ export default function MoviesDetailsPage() {
   }, [movieId]);
 
   const onGoBack = () => {
-    history.push(location?.state?.from ?? '/');
+    history.push(currentState ?? '/');
   };
 
   return (
